@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+
+    <form action="login.html" method="get">
+        <table>
+            <tr>
+                <td><label for="u_name">Enter Name</label></td>
+                <td>
+                    <input type="text" id="u_name" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_pwd">Enter Password</label></td>
+                <td>
+                    <input type="password" id="u_pwd" name="userpwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <!-- <select name="country">
+                        <option>Countries</option>
+                        <option value="ind">India</option>
+                        <option value="ch">China</option>
+                        <option value="fr">France</option>
+                        <option value="hk">Hongkong</option>
+                        <option value="th">Thailand</option>
+                        <option value="it">Italy</option>
+                    </select> -->
+                    <select>
+                        <option>Country</option>
+                        <optgroup label="Asia">
+                            <option value="ind">India</option>
+                            <option value="ch">China</option>
+                            <option value="hk">Hongkong</option>
+                            <option value="th">Thailand</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="">France</option>
+                            <option value="">Italy</option>
+                            <option value="">England</option>
+                            <option value="">Germany</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="m"> Male
+                    <input type="radio" name="gender" value="f"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> MCA
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <!-- <input type="submit"> -->
+                    <button type="submit">Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

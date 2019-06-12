@@ -1,0 +1,12 @@
+/* h1,h3 - selectors
+{} - expression
+color  - property
+green - value */
+
+h1 {
+    color: green;
+}
+
+h3 {
+    color: blue;
+}
