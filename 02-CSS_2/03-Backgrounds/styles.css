@@ -1,0 +1,35 @@
+body {
+    background-image: url("https://www.kreedon.com/wp-content/uploads/2019/01/as-d.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    /* opacity: 0.5; */
+    background-attachment: fixed;
+    margin-bottom: 500px;
+    background-size: 100% 100%;
+}
+
+#div_1 {
+    background-image: url("https://thesocialmonk.com/wp-content/uploads/2017/11/Hidden-tricks-of-Indian-Cricketers-to-win-10.jpeg");
+}
+
+#div_2 {
+    background-image: url("https://s3.scoopwhoop.com/anj/jerseys/508640994.jpg");
+}
+
+#div_3 {
+    background-image: url("http://images.newindianexpress.com/uploads/user/imagelibrary/2019/6/2/original/Virat_Kohli_AP_Image2.jpg");
+}
+
+#div_4 {
+    background-image: url("https://www.crictracker.com/wp-content/uploads/2018/02/Virat-Kohli-9.jpg");
+}
+
+#div_5 {
+    background-image: url("https://s3.scoopwhoop.com/anj/sw/45bc19b4-59ab-4a9c-b688-11221cf71db1.jpg");
+}

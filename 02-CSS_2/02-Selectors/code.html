@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* height: 200px; */
+            border: 2px solid red;
+        }
+        
+        #div_1,
+        #div_2 {
+            height: 200px;
+        }
+        /* #div_2 {
+            height: 200px;
+        } */
+        
+        .child {
+            border-color: blue;
+        }
+        
+        #div_1 .child h2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Background Color</h1>
+
+    <div id="div_1">
+        <h2>This is inside div_1</h2>
+        <div class="child">
+            <h2>This is inside child of div_1</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="div_2">
+        <h2>This is inside div_2</h2>
+        <div class="child">
+            <h2>This is inside child of div_2</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
