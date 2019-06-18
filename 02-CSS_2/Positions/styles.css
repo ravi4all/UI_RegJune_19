@@ -19,6 +19,7 @@
     width: 100%;
     top: 0px;
     left: 0px;
+    z-index: 10;
 }
 
 #content {
@@ -34,7 +35,7 @@
     overflow-y: scroll;
 }
 
-#sidebar_1 ul {
+ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -52,6 +53,10 @@
     text-decoration: none;
 }
 
+#sidebar_1 ul li a:hover {
+    color: darkorange;
+}
+
 #main {
     width: 50%;
     margin-left: 21%;
@@ -67,9 +72,10 @@
     transition: 1s;
 }
 
-#main img:hover {
+
+/* #main img:hover {
     transform: scale(1.2, 1.2);
-}
+} */
 
 .article {
     overflow: hidden;
@@ -77,4 +83,21 @@
 
 #sidebar_2 {
     width: 25%;
+}
+
+#sidebar_2 ul li {
+    position: relative;
+}
+
+#sidebar_2 .image {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -31px;
+    margin-top: -33px;
+}
+
+#sidebar_2 .image img {
+    width: 100%;
 }
