@@ -1,0 +1,176 @@
+body {
+    margin: 0px;
+    font-family: 'proxima_novaregular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 10px 0px;
+    background-color: #005594;
+}
+
+#header .col {
+    width: 82%;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .logo img {
+    width: 135px;
+}
+
+#header .userList ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#header .userList ul li a {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#header .userList ul li:last-child {
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+}
+
+#header .toprow {
+    margin-bottom: 7px;
+}
+
+#header .worldwide ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px 0px 0px 20px;
+}
+
+#header .col-2 {
+    width: 16%;
+    margin-top: 6px;
+}
+
+#header .col-2 a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #336AA0;
+}
+
+#header .col-2 i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+    position: relative;
+}
+
+#main-navigation ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    display: none;
+    width: 270%;
+}
+
+#main-navigation .dropdown ul li {
+    display: block;
+    margin: 0px;
+    top: 12px;
+    border-bottom: 2px solid #f3f5f7;
+}
+
+#main-navigation .dropdown ul li:hover {
+    background-color: #f3f5f7;
+}
+
+#main-navigation .dropdown ul li a {
+    color: #005594;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    padding: 12px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#main-navigation ul li:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    border: 2px solid yellow;
+}
+
+#main-navigation ul li:hover:after {
+    display: block;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
