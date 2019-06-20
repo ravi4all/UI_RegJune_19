@@ -45,13 +45,14 @@ ul {
 }
 
 .container {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
 #header {
     padding: 10px 0px;
     background-color: #005594;
+    margin-bottom: 13px;
 }
 
 #header .col {
@@ -105,7 +106,7 @@ ul {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
-    padding: 10px;
+    padding: 9px;
     letter-spacing: 1px;
     background-color: #336AA0;
 }
@@ -167,6 +168,144 @@ ul {
 
 #main-navigation ul li:hover:after {
     display: block;
+}
+
+#stockMarket {
+    margin-bottom: 60px;
+}
+
+#stockMarket .tabs {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+#stockMarket .tabs ul li {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+#stockMarket .tabs ul li a {
+    color: #747474;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#stockMarket .tabs ul li.active a {
+    color: #005594;
+}
+
+#stockMarket .tabs ul li.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border: 2px solid #005594;
+    width: 100%;
+}
+
+#stockMarket .tab-content ul li {
+    display: inline-block;
+    background-color: #008456;
+    width: 17%;
+    margin-right: 12px;
+}
+
+#stockMarket .tab-content .row_1 {
+    margin-bottom: 10px;
+}
+
+#stockMarket .tab-content ul li a {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+#section_1 .container {
+    position: relative;
+}
+
+#section_1 .container::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    border: 3px solid #002F6C;
+    width: 10%;
+}
+
+#section_1 .title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #002F6C;
+    position: relative;
+    padding-top: 20px;
+}
+
+#section_1 .title:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 87%;
+    border: 1px solid #000;
+}
+
+#section_1 .col-1 {
+    width: 65%;
+}
+
+#section_1 .col-1 .image {
+    position: relative;
+}
+
+#section_1 .col-1 .image:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #071d39 1%, rgba(7, 29, 57, 0) 99%);
+    /* opacity: 0.5; */
+    left: 0px;
+    top: 0px;
+}
+
+#section_1 .col-1 img {
+    margin-left: 100px;
+    width: 85%;
+}
+
+#section_1 .col-1 .desc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 50%;
+    padding: 50px;
+}
+
+#section_1 .col-1 h2 {
+    font-size: 30px;
+}
+
+#section_1 .col-1 a {
+    color: #fff;
+}
+
+#section_1 .col-2 {
+    width: 32%;
+    margin-left: 20px;
+}
+
+#section_1 .col-2 .image {
+    width: 25%;
+}
+
+#section_1 .col-2 .news {
+    width: 70%;
 }
 
 #main {}
