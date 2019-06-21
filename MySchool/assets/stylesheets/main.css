@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+#topbar {
+    padding: 10px 0px;
+    background-color: #F8F9FA;
+}
+
+#topbar .col-1 {
+    width: 32%;
+}
+
+#topbar .col-2 {
+    width: 47%;
+}
+
+#topbar .col-1 i {
+    font-size: 12px;
+}
+
+#topbar .col-1 span {
+    color: #343a40;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#topbar .col-1 .col:first-child {
+    padding-right: 40px;
+    border-right: 1px solid #dee2e6;
+}
+
+#topbar .col-2 .col {
+    width: 50%;
+}
+
+#topbar .col-2 select {
+    height: 34px;
+    width: 180px;
+    color: #343a40;
+    padding-left: 10px;
+    border-color: #dee2e6;
+    letter-spacing: 1px;
+}
+
+#topbar .col-2 ul li {
+    display: inline-block;
+}
+
+#topbar .col-2 ul li:first-child {
+    margin-right: 20px;
+}
+
+#topbar .col-2 ul li:not(:first-child) {
+    height: 25px;
+    width: 30px;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+
+#topbar .col-2 ul li i {
+    color: #fff;
+}
+
+#topbar .col-2 ul li.fb {
+    background-color: #3b5998;
+}
+
+#topbar .col-2 ul li.tw {
+    background-color: #55acee;
+}
+
+#topbar .col-2 ul li.gp {
+    background-color: #F44336;
+}
+
+#topbar .col-2 ul li.dr {
+    background-color: #EA4C89;
+}
+
+#header {}
+
+#header .logo {
+    width: 17%;
+}
+
+#header .logo img {
+    vertical-align: middle;
+}
+
+#header .logo a {
+    display: block;
+    color: #6c5ce7;
+    font-size: 34px;
+    position: relative;
+}
+
+#header .logo a span {
+    color: #333;
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    bottom: 13px;
+    letter-spacing: 2px;
+}
+
+#main-navigation {
+    width: 70%;
+    margin-left: 10%;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    padding-top: 40px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#main-navigation ul li a {
+    color: #000;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
