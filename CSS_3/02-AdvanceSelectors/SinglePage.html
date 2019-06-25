@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            min-height: 600px;
+        }
+        
+        #content div:not(#home) {
+            display: none;
+        }
+        
+        #content #products:target {
+            display: block;
+        }
+        
+        #content #products:target~#home {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Single Page App</h1>
+
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+
+    <div id="content">
+
+        <div id="products">
+            <h2>Products</h2>
+            <img src="../../images/00-22.gif" alt="">
+            <img src="../../images/00-22.gif" alt="">
+            <img src="../../images/00-22.gif" alt="">
+            <img src="../../images/00-22.gif" alt="">
+            <img src="../../images/Football.png" alt="">
+            <img src="../../images/Football.png" alt="">
+            <img src="../../images/Football.png" alt="">
+        </div>
+
+        <div id="contact">
+            <h2>Contact Us @ 9890909989</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, exercitationem quibusdam fuga architecto repudiandae delectus ad assumenda enim quo quaerat, doloribus aperiam dignissimos adipisci animi numquam praesentium excepturi soluta magnam!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam doloremque laborum quibusdam nobis eligendi, voluptate magnam fugit vel deserunt nihil eius, quisquam rerum saepe at necessitatibus laudantium. Amet, nam doloremque.
+            </p>
+        </div>
+
+        <div id="gallery">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+            <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+        </div>
+
+        <div id="about">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dignissimos ipsum! Eum quisquam quod enim cupiditate quos sunt eos commodi, dolorem, optio soluta animi ab vitae repellendus beatae ducimus odit. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Repellendus ducimus harum quo quam molestias rerum quaerat vero debitis, quasi numquam voluptates vitae id distinctio nostrum eligendi perspiciatis hic ipsa odit!
+            </p>
+        </div>
+
+        <div id="home">
+            <h2>This is home Page</h2>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

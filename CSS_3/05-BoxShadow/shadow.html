@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            /* display: inline-block; */
+            border: 20px solid red;
+            overflow: hidden;
+            transition: 1s;
+            /* x,y,blur,spread */
+            /* box-shadow: 10px 10px 30px 0px blue, 20px 20px 30px 0px black, 30px 30px 30px 0px red; */
+        }
+        
+        div:hover {
+            box-shadow: 10px 10px 30px black;
+            transform: translateY(-30px);
+            margin-top: 60px;
+        }
+        /* div:hover img {
+            transform: scale(1.2, 1.2);
+        } */
+        
+        img {
+            transition: 1s;
+            width: 100%;
+            /* filter: blur(10px); */
+            /* filter: grayscale(1); */
+            filter: brightness(200%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Box Shadow</h1>
+
+    <div>
+        <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+    <div>
+        <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+    <div>
+        <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+
+
+</body>
+
+</html>
