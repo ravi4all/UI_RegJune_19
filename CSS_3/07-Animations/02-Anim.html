@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        
+        img {
+            animation-name: anim_1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes anim_1 {
+            0% {
+                transform: translateX(0px);
+            }
+            45% {
+                transform: translateX(900px);
+            }
+            50% {
+                transform: translateX(900px) rotateY(180deg);
+            }
+            100% {
+                transform: translateX(0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Animation Example</h1>
+
+    <div>
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+
+</body>
+
+</html>
