@@ -1,0 +1,45 @@
+body {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-height: 550px;
+}
+
+#slider {
+    width: 500%;
+    animation: slider 15s infinite linear;
+}
+
+.slide {
+    width: 20%;
+    display: inline-block;
+    margin: 0px -2px;
+}
+
+@keyframes slider {
+    0%,
+    18% {
+        transform: translateX(0%);
+    }
+    20%,
+    38% {
+        transform: translateX(-20%);
+    }
+    40%,
+    58% {
+        transform: translateX(-40%);
+    }
+    60%,
+    78% {
+        transform: translateX(-60%);
+    }
+    80%,
+    100% {
+        transform: translateX(-80%);
+    }
+    /* 100% {
+        transform: translateX(-100%);
+    } */
+}

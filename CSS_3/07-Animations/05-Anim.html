@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            bottom: 0px;
+            left: 0%;
+            background-color: red;
+            width: 8%;
+            height: 70px;
+            animation: waves 1s infinite;
+        }
+        
+        @keyframes waves {
+            0% {
+                height: 70px;
+            }
+            50% {
+                height: 500px;
+            }
+            100% {
+                height: 70px;
+            }
+        }
+        
+        #div_1 {
+            animation-timing-function: ease;
+        }
+        
+        #div_2 {
+            left: 10%;
+            animation-timing-function: ease-in;
+        }
+        
+        #div_3 {
+            left: 20%;
+            animation-timing-function: ease-out;
+        }
+        
+        #div_4 {
+            left: 30%;
+            animation-timing-function: ease-in-out;
+        }
+        
+        #div_5 {
+            left: 40%;
+            animation-timing-function: linear;
+        }
+        
+        #div_6 {
+            left: 50%;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        #div_7 {
+            left: 60%;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+        
+        #div_8 {
+            left: 70%;
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        
+        #div_9 {
+            left: 80%;
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        #div_10 {
+            left: 90%;
+            animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div_1"></div>
+    <div id="div_2"></div>
+    <div id="div_3"></div>
+    <div id="div_4"></div>
+    <div id="div_5"></div>
+    <div id="div_6"></div>
+    <div id="div_7"></div>
+    <div id="div_8"></div>
+    <div id="div_9"></div>
+    <div id="div_10"></div>
+
+</body>
+
+</html>
