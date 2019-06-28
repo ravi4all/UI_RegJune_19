@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+@media(max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    padding: 10px 0px;
+    background-color: lightskyblue;
+}
+
+.logo {
+    width: 15%;
+}
+
+img {
+    width: 100%;
+}
+
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    transition: 0.5s;
+}
+
+#main-nav ul li {
+    margin: 15px 10px 0px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    display: block;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 3px;
+    width: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#main-nav input {
+    position: absolute;
+    right: 23px;
+    top: 20px;
+    height: 14px;
+    width: 39px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .menu-btn {
+        display: block;
+    }
+    #main-nav ul {
+        position: absolute;
+        top: 55px;
+        left: 0px;
+        display: block;
+        transform: translateX(-100%);
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #main-nav ul li a {
+        color: #fff;
+    }
+    #main-nav input[value='toggle']:checked~ul {
+        transform: translateX(0%);
+    }
+    #main-nav input:checked~.menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    #main-nav input:checked~.menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    #main-nav input:checked~.menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -14px;
+    }
+}
+
+@media(max-width:640px) {
+    img {
+        width: 200px;
+    }
+}
