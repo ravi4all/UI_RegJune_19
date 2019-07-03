@@ -66,11 +66,30 @@ a {
     margin: 0 auto;
 }
 
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        width: 760px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
+
 #header {
     background-color: #22262A;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 10000;
     top: 0px;
 }
 
@@ -158,6 +177,21 @@ a {
 
 #header .toprow a:hover {
     background-color: #151515;
+}
+
+@media(max-width:1200px) {
+    #header .user_links {
+        width: 23%;
+    }
+}
+
+@media(max-width:992px) {
+    #header .sign-in {
+        width: 19%;
+    }
+    #header .user_links {
+        width: 33%;
+    }
 }
 
 #main-navigation {
@@ -265,6 +299,18 @@ a {
     width: 15%;
 }
 
+@media(max-width:768px) {
+    #section_1 ul li {
+        width: 30%;
+    }
+}
+
+@media(max-width:480px) {
+    #section_1 ul li {
+        width: 48%;
+    }
+}
+
 #section_2 {
     margin-bottom: 100px;
 }
@@ -336,6 +382,20 @@ a {
 
 #section_2 .card_2:hover div:before {
     height: 104%;
+}
+
+@media(max-width:768px) {
+    #section_2 ul li {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:480px) {
+    #section_2 ul li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
 }
 
 #footer {
