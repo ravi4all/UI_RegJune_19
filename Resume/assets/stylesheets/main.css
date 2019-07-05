@@ -1,0 +1,159 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Common Settings */
+
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 100;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .logo h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header .logo i {
+    display: inline-block;
+    font-size: 34px;
+    height: 50px;
+    text-align: center;
+    padding-top: 7px;
+    width: 50px;
+    background-color: #037EF3;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#main-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-navigation ul li {
+    margin: 20px 16px 0px;
+}
+
+#main-navigation ul li:last-child {
+    margin-top: 10px;
+}
+
+#main-navigation ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navbarSupportedContent {
+    justify-content: flex-end;
+}
+
+#banner {
+    height: 650px;
+    background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/banner.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner .snow_large,
+#banner .snow_medium,
+#banner .snow_small {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: snow 10s infinite linear;
+}
+
+#banner .snow_large {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+}
+
+#banner .snow_medium {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+}
+
+#banner .snow_small {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+}
+
+.large_1,
+.small_1,
+.medium_1 {
+    top: -100%;
+    /* animation-delay: 10s; */
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
