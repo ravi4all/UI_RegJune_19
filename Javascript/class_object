@@ -1,0 +1,30 @@
+function Emp(){}
+undefined
+var obj = new Emp();
+undefined
+function Emp(name,sal,dept){
+	this.name = name;
+	this.sal = sal;
+	this.dept = dept;
+}
+undefined
+var obj = new Emp('Ram',40000,'IT');
+undefined
+obj
+Emp {name: "Ram", sal: 40000, dept: "IT"}
+obj.address = "Delhi"
+"Delhi"
+obj
+Emp {name: "Ram", sal: 40000, dept: "IT", address: "Delhi"}
+var obj_2 = new Emp('Raman',45000,'IT');
+undefined
+obj_2
+Emp {name: "Raman", sal: 45000, dept: "IT"}
+Emp.prototype
+{constructor: ƒ}
+Emp.prototype
+{constructor: ƒ}constructor: ƒ Emp(name,sal,dept)__proto__: Object
+Emp.prototype.branch = "Rohini";
+"Rohini"
+obj
+Emp {name: "Ram", sal: 40000, dept: "IT", address: "Delhi"}address: "Delhi"dept: "IT"name: "Ram"sal: 40000__proto__: branch: "Rohini"constructor: ƒ Emp(name,sal,dept)__proto__: Object

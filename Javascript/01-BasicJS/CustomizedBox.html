@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Customized Box</h1>
+        <button class="btn">Login Now</button>
+    </header>
+
+    <div id="banner">
+        <img src="../../images/WebImages/Terminator002.jpg" alt="">
+    </div>
+
+    <div id="form">
+        <div class="inner_wrapper">
+            <div class="wrapper_desc">
+                <form action="#">
+                    <div class="form_element">
+                        <label for="name">Enter Name</label> <br>
+                        <input type="text" name="name" placeholder="Enter Name" id="name">
+                    </div>
+                    <div class="form_element">
+                        <label for="email">Enter Name</label> <br>
+                        <input type="email" name="email" placeholder="Enter Email" id="email">
+                    </div>
+                    <div class="form_element">
+                        <label for="pwd">Enter Password</label> <br>
+                        <input type="password" name="pwd" placeholder="Enter Password" id="pwd">
+                    </div> <br>
+                    <input type="submit">
+                </form>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", initEvent);
+
+        function initEvent() {
+            document.querySelector(".btn").addEventListener("click", showForm);
+            document.querySelector(".overlay").addEventListener("click", hideForm);
+        }
+
+        function showForm() {
+            document.querySelector("#form").className = "showForm";
+        }
+
+        function hideForm() {
+            document.querySelector("#form").className = "";
+        }
+
+        // function showForm() {
+        //     document.querySelector("#form").style.display = "block";
+        //     document.querySelector(".overlay").style.display = "block";
+        // }
+
+        // function hideForm() {
+        //     document.querySelector("#form").style.display = "none";
+        //     document.querySelector(".overlay").style.display = "none";
+        // }
+    </script>
+</body>
+
+</html>
