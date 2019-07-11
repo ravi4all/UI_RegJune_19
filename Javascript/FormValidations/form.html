@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="validations.js"></script>
+    <style>
+        .progress {
+            display: none;
+            height: 25px;
+            transition: 1s;
+            border: 1px solid black;
+        }
+        
+        .col {
+            position: relative;
+        }
+        
+        .img {
+            position: absolute;
+            right: 5px;
+            top: 3px;
+            width: 10%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Form Validations</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Name" id="box_1">
+                </td>
+                <td>
+                    <span class="err"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="text" placeholder="Enter Email" id="box_2">
+                </td>
+                <td>
+                    <span class="err"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td class="col">
+                    <input type="password" placeholder="Enter Password" id="box_3">
+                    <img title="Show Password" class="img" src="https://static.thenounproject.com/png/772420-200.png" alt="">
+                </td>
+                <td>
+                    <span class="err"></span>
+                </td>
+                <td>
+                    <!-- <progress max="100" class="progress" value="0"></progress> -->
+                    <span class="progress"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" placeholder="Confirm Password" id="box_4">
+                </td>
+                <td>
+                    <span class="err"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btn_1">Reset</button>
+                </td>
+                <td>
+                    <button id="btn_2">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
