@@ -1,0 +1,30 @@
+audio {
+    width: 80%;
+}
+
+#songsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+
+#songsList li {
+    width: 24%;
+    margin-bottom: 20px;
+}
+
+#songsList li img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    cursor: pointer;
+}
+
+#audioPlayer button {
+    font-size: 20px;
+    vertical-align: top;
+}
