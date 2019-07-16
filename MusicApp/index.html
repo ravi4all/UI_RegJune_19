@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 
     <script src="assets/javascripts/songs.js"></script>
+    <script src="assets/javascripts/model.js"></script>
     <script src="assets/javascripts/main.js"></script>
     <script src="https://kit.fontawesome.com/b06605e970.js"></script>
     <title>Hello, world!</title>
@@ -56,23 +57,31 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div id="audioPlayer">
-            <h2>Play Music</h2>
+    <div id="audioPlayer">
+        <div class="container">
+            <h4>Current Song <span id="cur_song"></span></h4>
             <button id="prev" class="btn btn-danger">
                 <i class="fas fa-angle-double-left"></i>
             </button>
             <button id="next" class="btn btn-danger">
                 <i class="fas fa-angle-double-right"></i>
             </button>
-            <audio id="audio" controls>
+            <button id="play" class="btn btn-danger">
+                <i class="fas fa-play"></i>
+            </button>
+            <span class="song_curr_time">00:00</span>
+            <audio id="audio">
                 <source src="">
             </audio>
+            <input type="range" value="0" id="slider">
+            <span class="song_total_time">00:00</span>
         </div>
+    </div>
 
-        <div id="content">
+    <div id="content">
+        <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="songs">
                         <h2>Featured Songs</h2>
                         <ul id="songsList">
@@ -80,7 +89,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-3">
+                    <h2>Playlist</h2>
+                    <ul id="playList">
+
+                    </ul>
+                </div>
             </div>
         </div>
 
