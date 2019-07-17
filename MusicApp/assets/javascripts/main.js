@@ -88,4 +88,41 @@ function addSong() {
             break
         }
     }
+    printSongs();
+}
+
+function deleteSong() {
+    var s_id = event.srcElement.parentElement.children[0].title;
+    for (var i = 0; i < obj.playList.length; i++) {
+        // console.log(obj.playList[i].id, s_id);
+        if (obj.playList[i].id == s_id) {
+            var songObj = obj.playList[i];
+            obj.deleteSong(songObj.id);
+            break
+        }
+    }
+    printSongs();
+}
+
+function printSongs() {
+    var ul = document.querySelector("#playList");
+    ul.innerHTML = "";
+    obj.playList.forEach(function(obj) {
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        span.innerHTML = obj.name;
+        var btn = document.createElement("button");
+        btn.innerHTML = '<i class="fas fa-trash"></i>';
+        btn.className = "btn btn-primary";
+        var img = document.createElement("img");
+        img.setAttribute('src', obj.image);
+        img.setAttribute('title', obj.id);
+        li.appendChild(img);
+        // console.log(obj);
+        li.appendChild(span);
+        li.appendChild(btn);
+        ul.appendChild(li);
+        img.addEventListener("click", playSong);
+        btn.addEventListener("click", deleteSong);
+    })
 }

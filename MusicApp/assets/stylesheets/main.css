@@ -2,7 +2,8 @@ audio {
     width: 80%;
 }
 
-#songsList {
+#songsList,
+#playList {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -10,6 +11,15 @@ audio {
     padding: 0px;
     text-align: center;
     list-style: none;
+}
+
+#playList {
+    text-align: left;
+    position: fixed;
+    width: 25%;
+    height: 70%;
+    overflow-y: scroll;
+    padding: 10px;
 }
 
 #songsList li {
@@ -22,6 +32,23 @@ audio {
     min-height: 200px;
     max-height: 200px;
     cursor: pointer;
+}
+
+#playList li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgreen;
+}
+
+#playList li span {
+    width: 55%;
+}
+
+#playList li img {
+    width: 20%;
+    height: 40px;
 }
 
 #audioPlayer button {
@@ -56,4 +83,39 @@ input[type="range"] {
     position: fixed;
     overflow-y: scroll;
     padding: 10px;
+}
+
+.songs::-webkit-scrollbar,
+#playList::-webkit-scrollbar {
+    width: 8px;
+    background-color: lightslategray;
+}
+
+.songs::-webkit-scrollbar-thumb,
+#playList::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: red;
+    box-shadow: 10px 10px 10px black;
+    height: 3px;
+    position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: -11px;
 }
