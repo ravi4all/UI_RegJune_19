@@ -10,6 +10,7 @@ function initEvent() {
     slider = document.querySelector("#slider");
     slider.addEventListener("change", seekSong);
     song_total_time = document.querySelector(".song_total_time");
+    loadPlayList();
 }
 
 function loadSongs() {
@@ -89,6 +90,22 @@ function addSong() {
         }
     }
     printSongs();
+    savePlayList();
+}
+
+function savePlayList() {
+    if (window.localStorage) {
+        var json = JSON.stringify(obj.playList);
+        localStorage.setItem("playlist", json);
+    }
+}
+
+function loadPlayList() {
+    if (window.localStorage) {
+        var arr = localStorage.getItem("playlist");
+        obj.playList = JSON.parse(arr);
+        printSongs();
+    }
 }
 
 function deleteSong() {
@@ -102,6 +119,7 @@ function deleteSong() {
         }
     }
     printSongs();
+    savePlayList();
 }
 
 function printSongs() {
