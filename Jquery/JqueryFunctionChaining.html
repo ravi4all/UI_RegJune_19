@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        
+        #parent_1,
+        #parent_2 {
+            border: 2px solid red;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Function Chaining</h1>
+
+    <div class="row">
+        <div id="parent_1">
+            <h2>This is inside parent_1</h2>
+            <div class="child">
+                <h2>This is inside child</h2>
+                <div class="innerchild">
+                    <h2>This is inside innerchild</h2>
+                    <img src="../images/hulk5-18463.gif" alt="">
+                    <button>Click Me</button>
+                    <img src="../images/hulk5-18463.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="parent_2">
+            <h2>This is inside parent_1</h2>
+            <div class="child">
+                <h2>This is inside child</h2>
+                <div class="innerchild">
+                    <h2>This is inside innerchild</h2>
+                    <img src="../images/hulk5-18463.gif" alt="">
+                    <button>Click Me</button>
+                    <img src="../images/hulk5-18463.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $(this).siblings().hide(1000);
+            // $(this).siblings("img").hide(1000);
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil(".row").hide(1000);
+            // $(this).parentsUntil('.row').siblings().hide(1000);
+            // $(this).parents(".row").find("#parent_2").hide(1000);
+            $(this).parents(".row").find("#parent_2 img").hide(1000);
+        })
+    </script>
+
+</body>
+
+</html>

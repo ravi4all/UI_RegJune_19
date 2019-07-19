@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Custom Animations</h1>
+
+    <button>Animate</button>
+    <hr>
+    <img src="../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        var img = $("img");
+        $("button").click(function() {
+            img.animate({
+                "left": '300px',
+                "opacity": 0.5,
+            }, 1000);
+            img.animate({
+                "left": '0px',
+                "opacity": 1,
+            }, 10000);
+            img.animate({
+                "left": '800px',
+                "opacity": 0.5,
+            }, 2000);
+            img.animate({
+                "left": '0px',
+                "opacity": 1,
+            }, 4000);
+        })
+    </script>
+</body>
+
+</html>
