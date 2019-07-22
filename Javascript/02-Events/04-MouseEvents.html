@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {}
+        
+        img {
+            width: 150%;
+            max-height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <div id="banner">
+        <img src="../../images/WebImages/Terminator002.jpg" alt="">
+    </div>
+
+    <script>
+        var banner = document.querySelector("#banner");
+        banner.addEventListener("mousemove", animateBg);
+
+        function animateBg() {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            banner.style.transform = 'translate(' + (-mouseX * 0.1) + "px," +
+                (-mouseY * 0.1) + "px)";
+        }
+    </script>
+</body>
+
+</html>
