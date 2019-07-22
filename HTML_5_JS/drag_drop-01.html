@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Drag And Drop- Powered by .COM</title>
+    <style type="text/css">
+        #leftDiv {
+            width: 335px;
+            height: 170px;
+            padding: 10px;
+            border: 5px solid blue;
+            float: left;
+            margin-right: 140px;
+            background-color: aqua;
+        }
+        
+        #rightDiv {
+            width: 335px;
+            height: 300px;
+            padding: 10px;
+            border: 5px solid red;
+            float: left;
+            background-color: gray;
+        }
+        
+        img {
+            height: 300px;
+            width: 150px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+
+            if (Modernizr.draganddrop) {
+                alert("Congrats Your Browser is Modern Browser and it has Support of Drag and Drop !");
+            } else {
+                alert("OOPS your browser is bit older version and does not have support of Drag and Drop");
+            }
+        });
+
+        function dragend(ev) {
+            ev.preventDefault();
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            //alert(ev.target.id);
+            ev.dataTransfer.setData("Text", ev.target.id);
+            /*this.style.opacity = '0.4';*/
+            console.log(ev.target.id);
+        }
+
+        function drop(ev) {
+            //ev.preventDefault();  // Tell to Browser to do no event
+            var ID = ev.dataTransfer.getData("Text");
+            var image = document.getElementById(ID);
+            //alert("ID "+ID + " "+document.getElementById(ID));
+            ev.target.appendChild(image);
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Drag the image into the rectangle:</h2>
+
+    <div id="leftDiv" ondrop="drop(event)" ondragover="allowDrop(event)" ondragend="dragend(event)"></div>
+
+    <div id="rightDiv" ondrop="drop(event)" ondragover="allowDrop(event)" ondragend="dragend(event)">
+
+        <img id="drag1" src="kitten-curled.png" draggable="true" ondragstart="drag(event)" width="336" height="100">
+    </div>
+</body>
+
+</html>

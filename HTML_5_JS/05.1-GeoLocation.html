@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="geoDemo">
+        <h2>Get your position:
+            <button onclick="getLocation()">Click here</button></h2>
+    </p>
+    <div id="mapholder"></div>
+    <!-- <script src="http://maps.google.com/maps/api/js?AIzaSyCz8X5Zxw4wR3OXt2Q9MGlhJd-b5iuyVgQ"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04Yc3QSV5bLbA5ux0caOwY9sPU-BnP4M&callback=getLocation" async defer></script>
+    <script>
+        var x = document.getElementById("geoDemo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                x.innerHTML = "unsupported browser.";
+            }
+        }
+
+        function showPosition(position) {
+            lat = position.coords.latitude;
+            lon = position.coords.longitude;
+            latlon = new google.maps.LatLng(lat, lon);
+            mapholder = document.getElementById('mapholder')
+            mapholder.style.height = '270px';
+            mapholder.style.width = '800px';
+
+            var myOptions = {
+                center: latlon,
+                zoom: 18,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControl: false,
+                navigationControlOptions: {
+                    style: google.maps.NavigationControlStyle.SMALL
+                }
+            };
+            var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+            var marker = new google.maps.Marker({
+                position: latlon,
+                map: map,
+                title: "Your position"
+            });
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User denied the request for Geolocation."
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

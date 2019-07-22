@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function initiate_geolocation() {
+  navigator.geolocation.getCurrentPosition(handle_geolocation_query);
+        }
+
+        function handle_geolocation_query(position){
+            alert('Lat: ' + position.coords.latitude + ' ' +
+            'Lon: ' + position.coords.longitude);
+        }
+    </script>
+</head>
+<body>
+<div>
+    <button onclick="initiate_geolocation()" id="btnInit" >Find my location</button>
+</div>
+
+</body>
+</html>

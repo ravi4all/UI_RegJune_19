@@ -1,0 +1,27 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Image Demo in Canvas - Powered by .com</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500" style="border:5px solid blue;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script type="text/javascript">
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var pic = new Image();
+pic.src ="Kitten-curled.png";
+pic.addEventListener("load",function(){
+    ctx.drawImage(pic,0,0,c.width,c.height)
+});
+
+
+
+</script>
+<!--<img src="">-->
+</body>
+</html>

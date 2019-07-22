@@ -1,0 +1,29 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Text Demo in Canvas - Powered by .com</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="1400" style="border:1px solid blue;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script type="text/javascript">
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.shadowOffSetX =4;
+ctx.shadowOffSetY =4;
+ctx.shadowBlur = 9;
+ctx.shadowColor = 'rgba(255,0,0,.5)';
+ctx.fillStyle="blue";
+ctx.font="bold 45px Tahoma";
+ctx.fillText("Amit Srivastava",20,240);
+ctx.strokeText("Amit Srivastava",20,340);
+
+
+</script>
+
+</body>
+</html>
